@@ -12,10 +12,4 @@
 </script>
 
 <style lang="scss" scoped>
-    .login{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #09c;
-    }
 </style>

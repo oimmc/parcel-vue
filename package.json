@@ -5,13 +5,14 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -rf dev && parcel index.html -d dev",
+    "start": "rm -rf dev && rm -rf .cache && node server.js",
     "build": "rm -rf dist && parcel build index.html -d dist --detailed-report"
   },
   "keywords": [],
-  "author": "",
+  "author": "wangayjundev",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.6.10",
     "vue-hot-reload-api": "^2.3.3",
     "vue-router": "^3.0.6"
@@ -25,6 +26,8 @@
     "cssnano": "^4.1.10",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.2",
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.1",
     "less": "^3.9.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-eslint": "^1.0.7",
